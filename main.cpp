@@ -179,7 +179,7 @@ int main(int argc, char** argv)
 
                     if (FreeImage_Save((strFormat == "tga" ? FIF_TARGA : FIF_PNG), pImage, (strOutputFolder + strOutFileName).c_str(), 0))
                     {
-                        cerr << strInFileName << ": OK" << endl;
+                        cout << strInFileName << ": OK" << endl;
                         ++nbImagesConverted;
                     }
                     else
